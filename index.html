@@ -5,9 +5,13 @@
     </head>
     <body>
         <h3>Social Questionnaire: <b>About chololate</b></h3>
-        <form action="https://formspree.io/ira_24@ukr.net"
-      method="POST">
+        <form action="https://formspree.io/ira_24@ukr.net" method="POST">
             <ol>
+                <li>Do you like chocolate?</li>
+                <select name="chocolate">
+                    <option value="yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
                 <li>How often do you eat chocolate?</li>
                 <input type="radio" name="often" value="once">Once a week<br>
                 <input type="radio" name="often" value="twice">Twice a week<br>
@@ -46,9 +50,12 @@
             <ul type="circle">
             <li><b><em>Personal information</em></b></li>
             <label for="name">Your name:</label>
-            <input type="text" name="Name" id="name" placeholder="Surname and First name">
+            <input type="text" name="Name" id="name" placeholder="Surname and First name" autofocus="autofocus">
             <br><label for="gender">Your gander:</label>
-            <input type="text" name="gender" id="gender" placeholder="Male or Female">
+            <select name="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+            </select>
             <br><label for="age">Your age:</label>
             <input type="text" pattern="[1-9] {,2}" title="Please enter valid number from 0 to 99" name="age" id="age">
             <br><label for="family">Your family status:</label>
@@ -57,13 +64,16 @@
             <input type="text" name="education" id="education">
             <li><b><em>Contact information</em></b></li>
             <label for="phone">Your phone number:</label>
-            <input type="text" name="phone" id="phone" autofocus="autofocus"> 
+            <input type="tel" name="phone" id="phone" > 
             <br><label for="email">Your Email:</label>
             <input type="email" name="email" id="email" required>
             <br><label for="web">Your Web site:</laber>
             <input type="url" name="web" id="web">
             </ul>
-            <input type="submit" id="submit" value="Send">
+            <label for="message">Your message:</label>
+            <textarea name="message" row="10" cols="30" placeholder="If you have comments please leave it here"></textarea>
+            <br><input type="submit" id="submit" value="Send">
+            <br><button type="button" onclick="alert('I love chocolate')">Click =)</button>
         </form>
     </body>
 </html>
