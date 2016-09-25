@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Social</title>
     </head>
     <body>
-        <h3>Social Questionary</h3>
+        <h3>Social Questionnaire: <b>About chololate</b></h3>
         <form action="https://formspree.io/ira_24@ukr.net"
       method="POST">
+            <ol>
+                <li>How often do you eat chocolate?</li>
+                <input type="radio" name="often" value="once">Once a week<br>
+                <input type="radio" name="often" value="twice">Twice a week<br>
+                <input type="radio" name="often" velue="three">Three times a week<br>
+                <input type="radio" name="often" value="lot">I eat lots of chocolade
+                <li>Let's talk texture - how do you like it?</li>
+                <input type="radio" name="like" value="100%">100% chocolate, no crunchiness<br>
+                <input type="radio" name="like" value="crunchiness">I'm all about crunchiness<br>
+                <input type="radio" name="like" value="notfused">Not fussed about texture
+                <li>Let's talk details - do you like...</li>
+                <input type="radio" name="details" value="bar">One solid bar<br>
+                <input type="radio" name="details" value="chunks">Something I can braek into chunks
+                <li>Let's talk about filling - how do you like it?</li>
+                <input type="radio" name="filling" value="just">Once again JUST chocolate<br>
+                <input type="radio" name="filling" value="catamel">I like a bit of caramel<br>
+                <input type="radio" name="filling" value="nuts">I like nuts<br>
+                <input type="radio" name="filling" value="wafer">I like wafer<br>
+                <input type="radio" name="filling" value="airy">I like it light and airy not just solod chocolate
+                <li>What's your favourite time of day to eat chocolate?</li>
+                <input type="radio" name="time" value="morning">Morning<br>
+                <input type="radio" name="time" value="lunchtime">Lunchtime<br>
+                <input type="radio" name="time" value="evening">Evening<br>
+                <input type="radio" name="time" value="now">RIGHT NOW
+                <li>How often were you allowed to eat chocolate when you were a kid?</li>
+                <input type="radio" name="kid" value="myself">When I behaved myself<br>
+                <input type="radio" name="kid" value="friday">Once a week on Friday<br>
+                <input type="radio" name="kid" value="never">Never =(<br>
+                <input type="radio" name="kid" value="everyday">Every day
+                <li>Where's your favourite place to eat chocolate?</li>
+                <input type="radio" name="place" value="sofa">On the sofa<br>
+                <input type="radio" name="place" value="work">At work<br>
+                <input type="radio" name="place" value="bench">Park bench
+            </ol>
+            
+            <p>Please enter below some information about you</p>
             <ul type="circle">
             <li><b><em>Personal information</em></b></li>
             <label for="name">Your name:</label>
@@ -24,7 +60,7 @@
             <input type="text" name="phone" id="phone" autofocus="autofocus"> 
             <br><label for="email">Your Email:</label>
             <input type="email" name="email" id="email" required>
-            <br><laber for="web">Your Web site:</laber>
+            <br><label for="web">Your Web site:</laber>
             <input type="url" name="web" id="web">
             </ul>
             <input type="submit" id="submit" value="Send">
