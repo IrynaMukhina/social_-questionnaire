@@ -18,9 +18,9 @@
                 <input type="radio" name="often" velue="three">Three times a week<br>
                 <input type="radio" name="often" value="lot">I eat lots of chocolade
                 <li>Let's talk texture - how do you like it?</li>
-                <input type="radio" name="like" value="100%">100% chocolate, no crunchiness<br>
-                <input type="radio" name="like" value="crunchiness">I'm all about crunchiness<br>
-                <input type="radio" name="like" value="notfused">Not fussed about texture
+                <input type="checkbox" name="like" value="100%">100% chocolate, no crunchiness<br>
+                <input type="checkbox" name="like" value="crunchiness">I'm all about crunchiness<br>
+                <input type="checkbox" name="like" value="notfused">Not fussed about texture
                 <li>Let's talk details - do you like...</li>
                 <input type="radio" name="details" value="bar">One solid bar<br>
                 <input type="radio" name="details" value="chunks">Something I can braek into chunks
@@ -58,7 +58,7 @@
                     <option value="male">Male</option>
             </select>
             <br><label for="age">Your age:</label>
-            <input type="text" pattern="[1-9] {,2}" title="Please enter valid number from 0 to 99" name="age" id="age">
+            <input type="text" title="Please enter valid number from 0 to 99" name="age" id="age" pattern="[1-9]{,2}">
             <br><label for="family">Your family status:</label>
             <input type="text" name="family" id="family">
             <br><label for="education">Your education:</label>
@@ -68,7 +68,7 @@
             <input type="tel" name="phone" id="phone" > 
             <br><label for="email">Your Email:</label>
             <input type="email" name="email" id="email" required>
-            <br><label for="web">Your Web site:</laber>
+            <br><label for="web">Your Web site:</label>
             <input type="url" name="web" id="web">
             </ul>
             <label for="message">Your message:</label>
