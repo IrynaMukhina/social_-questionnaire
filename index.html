@@ -49,9 +49,9 @@
             
             <h4>Please enter below some information about you</h4>
             
-            <ul type="circle">
-            <li><b><em>Personal information</em></b></li>
-            <br><label for="name">Your name:</label>
+            <fieldset>
+                <legend><b><em>Personal information</em></b></legend>
+                 <br><label for="name">Your name:</label>
             <input type="text" name="Name" id="name" placeholder="Surname and First name">
             <br><label for="gender">Your gander:</label>
             <select name="gender">
@@ -64,16 +64,18 @@
             <input type="text" name="family" id="family">
             <br><label for="education">Your education:</label>
             <input type="text" name="education" id="education">
-            <li><b><em>Contact information</em></b></li>
+            </fieldset>
+            <fieldset>
+                <legend><b><em>Contact information</em></b></legend>
             <br><label for="phone">Your phone number:</label>
             <input type="number" name="phone" id="phone" length="12" min="1" > 
             <br><label for="email">Your Email:</label>
             <input type="email" name="email" id="email" required>
             <br><label for="web">Your Web site:</label>
             <input type="url" name="web" id="web">
-            </ul>
-            <label for="message">Your message:</label>
+            <br><label for="message">Your message:</label>
             <br><textarea name="message" rows="10" cols="30" placeholder="If you have comments please leave it here"></textarea>
+            </fieldset>
             <br><input type="submit" id="submit" value="Send">
             <input type="reset" value="Reset">
             <br><button type="button" onclick="alert('I love chocolate')">Click =)</button>
